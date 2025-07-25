@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(background-image.jpg);
+  height: 93vh;
+  width: 100%;
+  position: relative;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main .box {
+  height: 100%;
+  width: 100%;
+  opacity: 0.73;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  left: 0;
+}
+
+nav {
+  z-index: 2;
+  position: relative;
+  margin-top: 21px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  padding: 21px;
+
+}
+
+.logo {
+  fill: red;
+  z-index: 2;
+  position: relative;
+  width: 9.25rem;
+  height: 2.5rem;
+}
+
+.side-button {
+  z-index: 1;
+  position: relative;
+}
+
+.hero {
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height:90%;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  line-height: 1.2;
+  font-weight: 900;
+  font-family: "Martel Sans", sans-serif;
+}
+
+p {
+  font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  font-weight: 600;
+}
+
+span {
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 400;
+}
+
+input.email {
+
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0.35rem;
+  text-align: center;
+  font-size: 1rem;
+  /* padding: 50px 350px; */
+  border: 1px solid rgb(101, 100, 100);
+  width: 350px;
+  height: 50px;
+  position: relative;
+}
+
+@media screen and (max-width: 666px) {
+  input.email {
+    caret-color: rgb(255, 255, 255);
+    width: 100%;
+    font-family: unset;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 1.25rem;
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+  }
+}
+
+
+input.email::placeholder {
+  color: #beb6b6;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-left: 17px;
+}
+
+.button-GS {
+  background-color: red;
+  color: #000;
+  border-radius: 0.35rem;
+  height: 50px;
+  font-size: 1.28rem;
+  border: 1px solid rgb(101, 100, 100);
+  width: 185px;
+  font-weight: 900;
+  color: #fff;
+  padding: 0.75rem 2.3rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  padding: 0.75rem 1.5rem;
+
+}
+
+.button-GS svg {
+  display: flex;
+  position: relative;
+}
+
+.center-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 13;
+}
+
+.sign-in {
+  background-color: red;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: 0.35rem;
+  border: 1px solid rgb(101, 100, 100);
+}
+
+select {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0.35rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.375rem 1.5rem;
+  border: 1px solid rgb(101, 100, 100);
+}
+
+.midpage {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+
+.bottom-curve {
+  height: 0.15rem;
+  width: 100%;
+  background-color: red;
+  box-sizing: border-box;
+  border: 4px solid rgba(233, 28, 100, 0.671);
+  border-radius: 100% 100% 0px 0px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  background: radial-gradient(50% 500% at 50% -420%, rgba(64, 96, 222, 0.4) 90%, rgba(0, 0, 0, 0.1) 100%), black;
+  justify-self: center;
+  width: 130vw;
+  height: 100px;
+  position: relative;
+}
+
+.main-card {
+  width: 200px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  background-color: aqua;
+}
+
+.main-card:hover {
+  transform: scale(1.05);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 60px;
+  max-width: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.card-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 40px;
+  height: 60px;
+  z-index: 5;
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
+
+.squidgame {
+  background-image: url("https://...your-image-url...");
+}
+
+.raid2 {
+  background-image: url("https://...your-image-url...");
+}
+
+.greatindian {
+  background-image: url("https://...your-image-url...");
+}
+
+.hit {
+  background-image: url("https://...your-image-url...");
+}
+
+.app {
+  background-image: url("https://...your-image-url...");
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .main-card {
+    width: 140px;
+    height: 200px;
+  }
+
+  .card-container {
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .scroll-btn {
+    width: 30px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-card {
+    width: 120px;
+    height: 180px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+.bcandtn {
+  height: 100vh;
+}
+
+.responsive-container {
+  padding: 0 4vw;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.more-reasons-section {
+  margin-top: 4rem;
+  padding: 0 5vw;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 2rem;
+  font-family: "Martel Sans", sans-serif;
+}
+
+/* UPDATED INFO CARDS SECTION */
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+@media (min-width: 1024px) {
+  .info-cards {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-cards {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .info-cards::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.info-card {
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  flex: 1 1 250px;
+  max-width: 280px;
+  min-width: 260px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  color: white;
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.info-card h4 {
+  font-size: 1.1rem;
+  margin: 1rem 0 0.5rem;
+  color: white;
+}
+
+.info-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+  .info-card {
+    padding: 1rem;
+    min-height: 240px;
+  }
+
+  .info-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .info-card h4 {
+    font-size: 1rem;
+  }
+
+  .info-card p {
+    font-size: 0.85rem;
+  }
+}
+
+h4 {
+  size: 24px;
+  font-weight: 1000;
+  font-family: Helvetica;
+}
+
+.faq-section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 20px;
+  background-color: black;
+}
+
+.faq-title {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-family: "Martel Sans", sans-serif;
+}
+
+.faq-item {
+  background-color: #2d2d2d;
+  margin-bottom: 0.5rem;
+  border: none;
+}
+
+.faq-question {
+  width: 100%;
+  background-color: #2d2d2d;
+  color: white;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 1.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  position: relative;
+  font-weight: 500;
+}
+
+.faq-question::after {
+  content: "+";
+  font-size: 1.5rem;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+  content: "×";
+  font-size: 2rem;
+}
+
+.faq-answer {
+  display: none;
+  background-color: #2d2d2d;
+  padding: 0 1.5rem 1.5rem;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
+}
+
+
+.bottom-curve {
+  box-sizing: border-box;
+    border: 4px solid rgba(233, 28, 100, 0.671);
+    border-radius: 100% 100% 0px 0px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 96, 222, 0.4) 90%, rgba(0, 0, 0, 0.1) 100%), black;
+    justify-self: center;
+    width: 130vw;
+    height: 100px;
+    position: relative;}
